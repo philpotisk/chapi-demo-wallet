@@ -18,11 +18,9 @@
   },
   "homepage": "https://github.com/digitalbazaar/chapi-demo-wallet",
   "dependencies": {
+    "express": "^4.17.1"
   },
-  "devDependencies": {
-  },
-  "files": [
-  ],
-  "scripts": {
-  }
+  "devDependencies": {},
+  "files": [],
+  "scripts": {}
 }

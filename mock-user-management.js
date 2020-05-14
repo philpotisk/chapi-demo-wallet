@@ -77,7 +77,8 @@ function storeInWallet(verifiablePresentation) {
 
   // base64 encode the serialized contents (verifiable presentations)
   const serialized = btoa(JSON.stringify(walletContents));
-  Cookies.set('walletContents', serialized, {path: '', secure: true, sameSite: 'None'});
+  //Cookies.set('walletContents', serialized, {path: '', secure: true, sameSite: 'None'});
+  Cookies.set('walletContents', serialized);
 }
 
 function clearWalletDisplay() {
@@ -141,7 +142,9 @@ function loadCurrentUser() {
 
 function saveCurrentUser(name) {
   console.log('Setting login cookie.');
-  Cookies.set('username', name, {path: '', secure: true, sameSite: 'None'});
+  Cookies.set('username', name);
+  let c = Cookies.get('username');
+  console.log('username: ' + c);
 }
 
 function resetCurrentUser() {

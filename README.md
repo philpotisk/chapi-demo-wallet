@@ -1,6 +1,6 @@
-# Credential Handler API Demo Wallet
+# Credential Handler API Test Wallet
 
-> [Credential Handler API](https://w3c-ccg.github.io/credential-handler-api/) (CHAPI) demo wallet app
+> [Credential Handler API](https://w3c-ccg.github.io/credential-handler-api/) (CHAPI) Test Wallet app
 
 ## Table of Contents
 
@@ -14,13 +14,20 @@
 
 Demos:
 
-1. [Demo Wallet](https://chapi-demo-wallet.digitalbazaar.com/)
+1. [Test Wallet](https://chapi-demo-wallet.digitalbazaar.com/)
 2. [Demo Issuer](https://chapi-demo-issuer.digitalbazaar.com/)
 3. [Demo Verifier](https://chapi-demo-verifier.digitalbazaar.com/)
 
 ## Background
 
 ## Usage
+
+    node server.js
+
+    Install ngrok and let it listen on http-port 3000
+    ./ngrok http 3000
+
+    replace WALLET_LOCATION in config.js with ngrok url e.g. http://2d69a803.ngrok.io
 
 ## Security
 
