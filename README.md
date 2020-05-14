@@ -22,12 +22,16 @@ Demos:
 
 ## Usage
 
-    node server.js
+    npm install 
 
     Install ngrok and let it listen on http-port 3000
     ./ngrok http 3000
 
     replace WALLET_LOCATION in config.js with ngrok url e.g. http://2d69a803.ngrok.io
+        
+    node server.js
+
+    now visit the ngrok url
 
 ## Security
 
